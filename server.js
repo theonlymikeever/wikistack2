@@ -10,7 +10,8 @@ const bodyParser = require('body-parser');
 const app = express();
 nunjucks.configure('views', { noChache: true });
 app.set('view engine', 'html');
-app.engine('html', nunjucks.render);
+app.engine('html', nunjucks.render)
+
 
 //middleware
 app.use(morgan('dev'));
